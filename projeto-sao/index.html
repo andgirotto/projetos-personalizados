@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@100;200;300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./src/imagens/icon_cropped.png">
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/estilo.css">
+    <link rel="stylesheet" href="./src/css/responsive.css">
+    
+
+    <title>Sword Art Online - Trailer</title>
+
+</head>
+<body>
+    <div class="video-fundo">
+        <video class="video" autoplay loop muted>
+            <source src="./src/video/Sword Art Online - Official Trailer.mp4" type="video/mp4">
+        </video>
+    </div>
+    
+    <header class="cabecalho">
+        <a>
+            <img class="logo" src="./src/imagens/castelo.png"> 
+        </a>
+        <nav>
+            <ul class="menu">
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Detalhes</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <div class="informacoes">
+            <img class="imagem-titulo" src="./src/imagens/sword-Art-online.png">
+            <p class="sinopse">A história começa com o lançamento do esperado jogo Sword Art Online (SAO), um jogo que, usando a tecnologia do “Nerve Guear”, os jogadores controlam os seus avatares dentro do jogo apenas usando o seu pensamento, ficando o corpo no “mundo real” como se estivesse a dormir. </p>
+            <button class="botao-trailer">Veja o trailer</button>
+        </div>
+        
+        <img class="kirito-asuna" src="./src/imagens/sao_2012.png"/>
+        
+        <div class="modal">
+            <div class="conteudo-modal">
+                <span class="fechar-modal">fechar</span>
+                <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/6ohYYtxfDCg?start=7" title="Trailer oficial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>   
+    
+    </main>
+
+    <script src="./src/js/index.js"></script>
+    
+</body>
+</html>

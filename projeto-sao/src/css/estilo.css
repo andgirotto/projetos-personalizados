@@ -1,0 +1,149 @@
+body {
+    font-family: "Sofia Sans";
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.cabecalho .logo {
+    width: 120px;
+}
+
+.cabecalho .menu {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.cabecalho nav li a {
+    font-weight: bold;
+    color: #5484ac;
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 10px 20px;
+    transition: 0.4;
+}
+
+.cabecalho nav li a:hover {
+    background-color: #ffffff;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    max-width: 1440px;
+    margin:0 auto;
+}
+
+.container .imagem-titulo {
+    max-width: 500px;
+    margin: 30px;
+}
+
+.container .kirito-asuna {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.container .informacoes {
+    color: #ffffff;
+    text-align: justify;
+    width: 50%;
+    font-size: 18px;
+}
+
+.container .botao-trailer {
+    background-color: transparent;
+    color: #5484ac;
+    font-weight: bold;
+    padding: 8px;
+    border: none;
+    font-size: 24px;
+    text-transform: uppercase;
+    transition: 0.7 all ease-in-out;
+    margin: 40px 30%;
+    font-family: "Sofia Sans";
+    cursor: pointer;
+}
+
+.container .botao-trailer:hover {
+    transform: scale(1.1);
+}
+
+.video-fundo {
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.video.fundo .video {
+    height: 100vh;
+}
+
+.video-fundo::after {
+    content: "";
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgb(0,0,0);background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,1) 100%);
+}
+
+.modal {
+    background-color: rgba(52, 52, 50, 0.749);
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.conteudo-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    border-radius: 5px;
+    gap: 15px;
+}
+
+.fechar-modal {
+    background-color: #5484ac;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 20px;
+    width: 70px;
+    text-align: center;
+    cursor: pointer;
+    font-family: "Sofia Sans";
+    border-radius: 10px 10px;
+    transition: 0.7;
+}
+
+.fechar-modal:hover {
+    transform: scale(1.05);
+}
+
+.modal iframe {
+    border-width: 0;
+    width: 640px;
+    height: 360px;
+}
+
+.modal.aberto {
+    opacity: 1;
+    visibility: visible;
+}
